@@ -1,0 +1,225 @@
+.home {
+
+    min-height: calc(100vh - 60px);
+
+    background:#f1f5f9;
+
+    padding:40px;
+
+}
+
+
+/* Hero Section */
+
+.hero {
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+
+.hero h1 {
+
+    color:#2563EB;
+
+    font-size:38px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.hero p {
+
+    color:#475569;
+
+    font-size:18px;
+
+}
+
+
+
+
+/* Buttons */
+
+.buttons {
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.buttons button {
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    transition:0.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+
+
+.lostBtn {
+
+    background:#F97316;
+
+}
+
+
+
+.foundBtn {
+
+    background:#16A34A;
+
+}
+
+
+
+.buttons button:hover {
+
+    transform:translateY(-4px);
+
+}
+
+
+
+
+/* Cards */
+
+.cards {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-top:30px;
+
+}
+
+
+
+
+.card {
+
+    width:300px;
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+}
+
+
+
+.card:hover {
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+.card-icon {
+
+    font-size:45px;
+
+    color:#2563EB;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card h2 {
+
+    color:#2563EB;
+
+}
+
+
+
+.card p {
+
+    color:#64748B;
+
+    margin:15px 0;
+
+}
+
+
+
+
+.card button {
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    margin:auto;
+
+}
+
+
+
+.card button:hover {
+
+    background:#1D4ED8;
+
+}

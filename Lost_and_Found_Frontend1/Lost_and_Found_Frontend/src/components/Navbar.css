@@ -1,0 +1,170 @@
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #1E293B;
+
+    color: white;
+
+    padding: 8px 25px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+
+}
+
+
+/* Logo */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: white;
+
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    list-style: none;
+
+    gap: 8px;
+
+}
+
+
+
+/* Home, Register, Login etc */
+
+.nav-links li a {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+
+    padding: 6px 10px;
+
+    border-radius: 7px;
+
+
+    /* Difference between navbar and contents */
+
+    background: #334155;
+
+
+    transition: 0.3s;
+
+}
+
+
+/* Icons */
+
+.nav-links li a svg {
+
+    font-size: 14px;
+
+}
+
+
+/* Hover Effect */
+
+.nav-links li a:hover {
+
+    background: #2563EB;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* Logout Button */
+
+.logout-btn {
+
+    background: #EF4444;
+
+    color: white;
+
+
+    border: none;
+
+    padding: 6px 12px;
+
+
+    border-radius: 7px;
+
+
+    cursor: pointer;
+
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+
+    transition: 0.3s;
+
+}
+
+
+
+.logout-btn svg {
+
+    font-size: 14px;
+
+}
+
+
+
+/* Logout Hover */
+
+.logout-btn:hover {
+
+    background: #DC2626;
+
+    transform: translateY(-2px);
+
+}

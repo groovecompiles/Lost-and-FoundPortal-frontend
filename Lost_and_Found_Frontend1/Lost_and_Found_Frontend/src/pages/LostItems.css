@@ -1,0 +1,170 @@
+/* Main Container */
+
+.items-container{
+    width:90%;
+    margin:40px auto;
+    background:#ffffff;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Page Heading */
+
+.items-container h2{
+    text-align:center;
+    color:#1E40AF;
+    font-size:38px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+/* Search */
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.search-box input{
+    width:380px;
+    padding:12px;
+    border:2px solid #d1d5db;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.search-box input:focus{
+    outline:none;
+    border-color:#2563EB;
+}
+
+/* Search Button */
+
+.search-btn{
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.search-btn:hover{
+    background:#1D4ED8;
+}
+
+/* Show All Button */
+
+.show-btn{
+    background:#10B981;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.show-btn:hover{
+    background:#059669;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+/* BLUE HEADER */
+
+table thead tr{
+    background:#2563EB !important;
+}
+
+table th{
+    background:#2563EB !important;
+    color:white !important;
+    padding:15px;
+    font-size:16px;
+    font-weight:bold;
+    border:1px solid #1D4ED8;
+}
+
+table td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
+}
+
+table tbody tr:nth-child(even){
+    background:#F8FAFC;
+}
+
+table tbody tr:hover{
+    background:#DBEAFE;
+}
+
+/* Delete Button */
+
+.delete-btn{
+    background:#EF4444;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.delete-btn:hover{
+    background:#DC2626;
+}
+
+/* Update Button */
+
+.update-btn{
+    background:#F59E0B;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.update-btn:hover{
+    background:#D97706;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .items-container{
+        width:98%;
+        padding:15px;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-box input{
+        width:100%;
+    }
+
+    table{
+        font-size:13px;
+    }
+}
