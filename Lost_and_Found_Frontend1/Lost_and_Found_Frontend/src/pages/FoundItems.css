@@ -1,4 +1,4 @@
-.items-container{
+.found-items-container {
 
     width:90%;
     margin:40px auto;
@@ -9,7 +9,8 @@
 
 }
 
-.items-container h2{
+
+.found-items-container h2 {
 
     text-align:center;
     color:#16A34A;
@@ -18,14 +19,16 @@
 
 }
 
-table{
+
+.found-items-table {
 
     width:100%;
     border-collapse:collapse;
 
 }
 
-table th{
+
+.found-items-table th {
 
     background:#22C55E;
     color:white;
@@ -33,7 +36,8 @@ table th{
 
 }
 
-table td{
+
+.found-items-table td {
 
     padding:12px;
     border-bottom:1px solid #ddd;
@@ -41,19 +45,22 @@ table td{
 
 }
 
-table tr:nth-child(even){
+
+.found-items-table tr:nth-child(even) {
 
     background:#f9f9f9;
 
 }
 
-table tr:hover{
+
+.found-items-table tr:hover {
 
     background:#ecfff2;
 
 }
 
-button{
+
+.found-items-table button {
 
     padding:8px 16px;
     border:none;
@@ -65,25 +72,29 @@ button{
 
 }
 
-.delete-btn{
+
+.delete-btn {
 
     background:#DC2626;
 
 }
 
-.delete-btn:hover{
+
+.delete-btn:hover {
 
     background:#B91C1C;
 
 }
 
-.update-btn{
+
+.update-btn {
 
     background:#2563EB;
 
 }
 
-.update-btn:hover{
+
+.update-btn:hover {
 
     background:#1D4ED8;
 

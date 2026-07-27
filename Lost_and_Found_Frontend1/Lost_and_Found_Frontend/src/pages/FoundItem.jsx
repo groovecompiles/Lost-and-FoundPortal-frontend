@@ -13,14 +13,18 @@ function FoundItem() {
         contactNumber: ""
     });
 
+
     const handleChange = (e) => {
+
         const { name, value } = e.target;
 
         setItem({
             ...item,
             [name]: value
         });
+
     };
+
 
     const handleSubmit = async (e) => {
 
@@ -33,47 +37,57 @@ function FoundItem() {
             return;
         }
 
+
         try {
 
             const response = await axios.post(
                 "http://localhost:8080/founditem",
                 item,
                 {
-                    headers: {
-                        Authorization: `Bearer ${token}`,
-                        "Content-Type": "application/json"
+                    headers:{
+                        Authorization:`Bearer ${token}`,
+                        "Content-Type":"application/json"
                     }
                 }
             );
+
 
             console.log(response.data);
 
             alert("Found Item Added Successfully");
 
+
             setItem({
-                itemName: "",
-                category: "",
-                description: "",
-                location: "",
-                foundDate: "",
-                contactNumber: ""
+                itemName:"",
+                category:"",
+                description:"",
+                location:"",
+                foundDate:"",
+                contactNumber:""
             });
 
-        } catch (error) {
+
+        } catch(error){
 
             console.log(error.response);
 
             alert("Failed to Add Found Item");
 
         }
+
     };
 
+
     return (
+
         <div className="found-container">
+
 
             <h2>Add Found Item</h2>
 
-            <form onSubmit={handleSubmit}>
+
+            <form className="found-form" onSubmit={handleSubmit}>
+
 
                 <input
                     type="text"
@@ -84,6 +98,7 @@ function FoundItem() {
                     required
                 />
 
+
                 <input
                     type="text"
                     name="category"
@@ -93,6 +108,7 @@ function FoundItem() {
                     required
                 />
 
+
                 <textarea
                     name="description"
                     placeholder="Description"
@@ -100,6 +116,7 @@ function FoundItem() {
                     onChange={handleChange}
                     required
                 />
+
 
                 <input
                     type="text"
@@ -110,6 +127,7 @@ function FoundItem() {
                     required
                 />
 
+
                 <input
                     type="date"
                     name="foundDate"
@@ -117,6 +135,7 @@ function FoundItem() {
                     onChange={handleChange}
                     required
                 />
+
 
                 <input
                     type="text"
@@ -127,14 +146,19 @@ function FoundItem() {
                     required
                 />
 
-                <button type="submit">
+
+                <button className="found-submit-btn" type="submit">
                     Add Found Item
                 </button>
 
+
             </form>
 
+
         </div>
+
     );
+
 }
 
 export default FoundItem;

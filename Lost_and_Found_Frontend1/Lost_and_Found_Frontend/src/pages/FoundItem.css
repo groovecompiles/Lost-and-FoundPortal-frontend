@@ -1,6 +1,6 @@
 /* Found Item Page */
 
-.found-container{
+.found-container {
 
     width:500px;
     margin:50px auto;
@@ -11,17 +11,19 @@
 
 }
 
-.found-container h2{
+
+.found-container h2 {
 
     text-align:center;
-    color:#16A34A;
+    color:#2563EB;
     margin-bottom:30px;
     font-size:30px;
 
 }
 
+
 .found-container input,
-.found-container textarea{
+.found-container textarea {
 
     width:100%;
     padding:14px;
@@ -30,54 +32,59 @@
     border-radius:8px;
     font-size:16px;
     outline:none;
-    transition:.3s;
+    transition:0.3s;
 
 }
 
-.found-container textarea{
+
+.found-container textarea {
 
     height:100px;
     resize:none;
 
 }
 
-.found-container input:focus,
-.found-container textarea:focus{
 
-    border-color:#22C55E;
-    box-shadow:0 0 8px rgba(34,197,94,.25);
+.found-container input:focus,
+.found-container textarea:focus {
+
+    border-color:#2563EB;
+    box-shadow:0 0 8px rgba(37,99,235,0.25);
 
 }
 
-.found-container button{
+
+.found-container button {
 
     width:100%;
     padding:14px;
-    background:#22C55E;
+    background:#F97316;
     color:white;
     border:none;
     border-radius:8px;
     font-size:17px;
     font-weight:600;
     cursor:pointer;
-    transition:.3s;
+    transition:0.3s;
 
 }
 
-.found-container button:hover{
 
-    background:#16A34A;
+.found-container button:hover {
+
+    background:#EA580C;
     transform:translateY(-2px);
 
 }
 
-@media(max-width:600px){
 
-.found-container{
+@media(max-width:600px) {
 
-    width:90%;
-    padding:25px;
+    .found-container {
 
-}
+        width:90%;
+        padding:25px;
+
+    }
 
 }

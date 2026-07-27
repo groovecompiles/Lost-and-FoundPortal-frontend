@@ -68,11 +68,11 @@ function FoundItems() {
 
     return (
 
-        <div className="items-container">
+        <div className="found-items-container">
 
             <h2>Found Items</h2>
 
-            <table>
+            <table className="found-items-table">
 
                 <thead>
 
