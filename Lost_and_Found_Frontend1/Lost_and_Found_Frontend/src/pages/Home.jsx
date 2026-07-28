@@ -3,148 +3,128 @@ import {
   FaSearch,
   FaPlusCircle,
   FaBoxOpen,
-  FaClipboardList
+  FaClipboardList,
 } from "react-icons/fa";
 
+import hero from "../assets/hero.svg";
 import "./Home.css";
 
-
 function Home() {
-
   return (
-
     <div className="home">
 
+      {/* ================= Hero Section ================= */}
 
       <div className="hero">
 
+        <div className="hero-content">
 
-        <h1>
-          Welcome to Lost & Found Portal
-        </h1>
+          {/* Left Side */}
 
+          <div className="hero-text">
 
-        <p>
-          Report your lost items or help others by reporting found items.
-        </p>
+            <h1>Welcome to Lost &amp; Found Portal</h1>
 
+            <p>
+              Easily report lost items and help others recover their
+              belongings through a secure, fast, and user-friendly platform.
+            </p>
 
+            <div className="buttons">
 
-        <div className="buttons">
+              <Link to="/lost-items">
+                <button className="lostBtn">
+                  <FaPlusCircle />
+                  Report Lost Item
+                </button>
+              </Link>
 
+              <Link to="/found-items">
+                <button className="foundBtn">
+                  <FaPlusCircle />
+                  Report Found Item
+                </button>
+              </Link>
 
-          <Link to="/lost-items">
+            </div>
 
-            <button className="lostBtn">
+          </div>
 
-              <FaPlusCircle />
+          {/* Right Side Illustration */}
 
-              Report Lost Item
+          <div className="hero-image">
 
-            </button>
+            <img
+              src={hero}
+              alt="Lost and Found Illustration"
+            />
 
-          </Link>
-
-
-
-          <Link to="/found-items">
-
-            <button className="foundBtn">
-
-              <FaSearch />
-
-              Report Found Item
-
-            </button>
-
-          </Link>
-
+          </div>
 
         </div>
 
-
       </div>
 
-
-
+      {/* ================= Cards Section ================= */}
 
       <div className="cards">
 
-
+        {/* Lost Items Card */}
 
         <div className="card">
 
+          <FaClipboardList className="card-icon" />
 
-          <FaClipboardList className="card-icon"/>
-
-
-          <h2>
-            Lost Items
-          </h2>
-
+          <h2>Lost Items</h2>
 
           <p>
-            View all reported lost items.
+            Browse all reported lost items and help reconnect them with their owners.
           </p>
-
-
 
           <Link to="/view-lost-items">
 
-            <button>
-              <FaSearch/>
+            <button className="viewLostBtn">
+
+              <FaSearch />
+
               View Lost Items
+
             </button>
 
           </Link>
 
-
         </div>
 
-
-
-
+        {/* Found Items Card */}
 
         <div className="card">
 
+          <FaBoxOpen className="card-icon" />
 
-          <FaBoxOpen className="card-icon"/>
-
-
-          <h2>
-            Found Items
-          </h2>
-
+          <h2>Found Items</h2>
 
           <p>
-            View all reported found items.
+            Explore reported found items and help return them to the rightful owner.
           </p>
-
-
 
           <Link to="/view-found-items">
 
-            <button>
-              <FaSearch/>
+            <button className="viewFoundBtn">
+
+              <FaSearch />
+
               View Found Items
+
             </button>
 
           </Link>
 
-
         </div>
-
-
 
       </div>
 
-
-
     </div>
-
   );
-
 }
-
 
 export default Home;
